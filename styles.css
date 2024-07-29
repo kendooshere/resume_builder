@@ -26,15 +26,11 @@ html, body{
     transform: translate(-40%,-4%);
     top: 40%;
     left: 4%;
-    background-color: #fff;
-    padding: 10px;
     border-radius: 50%;
     border:#fff 1px solid;
     height: 60px;
     width: 60px;
-    font-weight: 600;
-    font-size: 20px;
-    transition: background-color, 350ms ease-in-out;
+    transition: 350ms ease-in-out;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
@@ -55,6 +51,8 @@ html, body{
     background-color: black;
     cursor: pointer;
     color: #fff;
+    width: 75px;
+    height: 75px;
 }
 
 #resume{
