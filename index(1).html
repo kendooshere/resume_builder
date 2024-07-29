@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <div id="nav">
+        <button id="print" class="navbtn" onclick="printpdf()"><i class="bi bi-download"></i></button>
+        <form>
+            <input type="hidden" id="custinfo" name="custinfo" >
+        <button id="save" class="navbtn"><i class="bi bi-floppy2-fill"></i></button>
+    </form>
+        <button id="home" class="navbtn"><i class="bi bi-house"></i></button>
+    </div>
+
+    <div id="resume">
+        <section class="print">
+            <div class="head">
+                <div class="headlft">
+                    <span class="name" contenteditable="true">YOUR</span><span class="scdname"
+                        contenteditable="true">NAME</span><br>
+                    <span class="post" contenteditable="true">YOUR JOB PROFILE</span><br>
+                </div>
+
+
+                <div class="contact">
+                    <span class="content" contenteditable="true"><span class="icons-cont"><i
+                                class="bi bi-telephone-fill"></i></span>Your Number</span><br>
+                    <span class="content" contenteditable="true"><span class="icons-cont"><i
+                                class="bi bi-envelope"></i></span>sample@email.com</span><br>
+                    <span class="content" contenteditable="true"><span class="icons-cont"><i
+                                class="bi bi-github"></i></span>github/username</span><br>
+                    <span class="content" contenteditable="true"><span class="icons-cont"><i
+                                class="bi bi-linkedin"></i></span>Your linked-in profile</span><br>
+                </div>
+            </div>
+
+            <br>
+            <div class="line"></div><br>
+
+            <div class="mainbody">
+                <div class="leftside">
+                    <span class="title">MY SKILLS</span><br><br>
+                    <div>
+                        <span id="skill"><input type="checkbox" class="input-checkbox" name="skill" id="diffskill"><i
+                                class="bi bi-caret-right-fill"></i><span class="content" contenteditable="true">Enter
+                                your skill here</span></span>
+                        <div></div><br>
+                        <button id="skilladdon" type="button" class="btntrue" onclick="()"><i
+                                class="bi bi-plus-circle-fill"></i>SKILLS</button>
+                        <button id="skilldel" type="button" class="btnfalse" onclick="()"><i
+                                class="bi bi-dash-circle-fill"></i>SKILLS</button>
+                        <div class="skills"></div>
+
+                        <br><br><span class="title">MY ACHIEVEMENTS</span><br><br>
+                        <div>
+                            <span id="ach"><input type="checkbox" class="input-checkbox" name="achieve" id="diffach"><i
+                                    class="bi bi-caret-right-fill"></i><span class="content"
+                                    contenteditable="true">Enter your achievement here</span></span>
+                            <div></div><br>
+                            <button id="achieveaddon" type="button" class="btntrue" onclick="()"><i
+                                    class="bi bi-plus-circle-fill"></i>ACHIEVEMENT</button>
+                            <button id="achievedel" type="button" class="btnfalse" onclick="()"><i
+                                    class="bi bi-dash-circle-fill"></i>ACHIEVEMENT</button>
+                            <div class="achievement"></div>
+
+                            <br><br><span class="title">LANGUAGES</span><br><br>
+                            <div>
+                                <span id="lang"><input type="checkbox" class="input-checkbox" name="language" id="difflang"><i
+                                        class="bi bi-caret-right-fill"></i><span class="content"
+                                        contenteditable="true">Enter your languages here</span></span>
+                                <div></div><br>
+                                <button id="langaddon" type="button" class="btntrue" onclick="()"><i
+                                        class="bi bi-plus-circle-fill"></i>LANGUAGES</button>
+                                <button id="langdel" type="button" class="btnfalse" onclick="()"><i
+                                        class="bi bi-dash-circle-fill"></i>LANGUAGES</button>
+                                <div class="languages"></div>
+
+                                <br><br><span class="title">INTERESTS</span><br><br>
+                                <div>
+                                    <span id="int"><input type="checkbox" class="input-checkbox" name="interest" id="diffint"><i
+                                            class="bi bi-caret-right-fill"></i><span class="content"
+                                            contenteditable="true">Enter your interest here</span></span>
+                                    <div></div><br>
+                                    <button id="intaddon" type="button" class="btntrue" onclick="()"><i
+                                            class="bi bi-plus-circle-fill"></i>INTEREST</button>
+                                    <button id="intdel" type="button" class="btnfalse" onclick="()"><i
+                                            class="bi bi-dash-circle-fill"></i>INTEREST</button>
+                                    <div class="interests"></div><br><br>
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="border"></div>
+                <div class="rightside">
+                    <span class="title">PROFILE</span><br><br>
+                    <div contenteditable="true">
+                        This is where you can write about yourself. <br> The thing is that you have to
+                        keep it short and summarise why the company should hire you in the first place
+                    </div>
+
+                    <br><br><span class="title">EDUCATION</span><br><br>
+                    <div id="education">
+                        <span id="edu"><input type="checkbox" class="input-checkbox" name="educat" id="diffedu"><i
+                                class="bi bi-caret-right-fill"></i><span contenteditable="true"><b>YOUR DEGREE</b></span><br><span class="content"
+                                contenteditable="true">Institute Name</span>-<span contenteditable="true">Passing Year</span></span>
+                        <div></div><br>
+                        <button id="eduaddon" type="button" class="btntrue" onclick= "addedu()"><i
+                                class="bi bi-plus-circle-fill"></i>EDUCATION</button>
+                        <button id="edudel" type="button" class="btnfalse" onclick="()"><i
+                                class="bi bi-dash-circle-fill"></i>EDUCATION</button>
+                        <div class="education"></div>
+
+                        <br><br><span class="title" contenteditable="true">NEW SECTION</span><br><br>
+                        <div id="newsection">
+                              
+                            <div id="newsectdes" contenteditable="true">
+                                This is the description of the new section of your resume.
+                                Stay in limit and write something that is under 400 words.
+                            </div><br>
+                            <button id="newaddon" type="button" class="btntrue" onclick="()"><i
+                                    class="bi bi-plus-circle-fill"></i>SECTION</button>
+                            <button id="newdel" type="button" class="btnfalse" onclick="()"><i
+                                    class="bi bi-dash-circle-fill"></i>SECTION</button>
+                            <div class="newsection"></div>
+
+                        </div>
+                    </div>
+                </div>  
+            </section>
+    </div>
+
+    
+</body>
+<script src="script.js"></script>
+
+</html>
