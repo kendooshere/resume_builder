@@ -14,9 +14,9 @@
     <div id="nav">
         <button id="print" class="navbtn" onclick="printpdf()"><i class="bi bi-download"></i></button>
         <form>
-            <input type="hidden" id="custinfo" name="custinfo" >
-        <button id="save" class="navbtn"><i class="bi bi-floppy2-fill"></i></button>
-    </form>
+            <input type="hidden" id="custinfo" name="custinfo">
+            <button id="save" class="navbtn"><i class="bi bi-floppy2-fill"></i></button>
+        </form>
         <button id="home" class="navbtn"><i class="bi bi-house"></i></button>
     </div>
 
@@ -48,61 +48,62 @@
             <div class="mainbody">
                 <div class="leftside">
                     <span class="title">MY SKILLS</span><br><br>
-                    <div>
+                    <div id="skills">
+                        <div class="skillblock">
                         <span id="skill"><input type="checkbox" class="input-checkbox" name="skill" id="diffskill"><i
                                 class="bi bi-caret-right-fill"></i><span class="content" contenteditable="true">Enter
                                 your skill here</span></span>
-                        <div></div><br>
+                        </div><br>
+                    </div>
                         <button id="skilladdon" type="button" class="btntrue" onclick="()"><i
                                 class="bi bi-plus-circle-fill"></i>SKILLS</button>
                         <button id="skilldel" type="button" class="btnfalse" onclick="()"><i
                                 class="bi bi-dash-circle-fill"></i>SKILLS</button>
-                        <div class="skills"></div>
-
+                            
+        
                         <br><br><span class="title">MY ACHIEVEMENTS</span><br><br>
-                        <div>
-                            <span id="ach"><input type="checkbox" class="input-checkbox" name="achieve" id="diffach"><i
-                                    class="bi bi-caret-right-fill"></i><span class="content"
-                                    contenteditable="true">Enter your achievement here</span></span>
-                            <div></div><br>
+                    <div id="acheivements">
+                        <div class="achblock">
+                            <span id="ach"><input type="checkbox" class="input-checkbox" name="achieve"
+                                        id="diffach"><i class="bi bi-caret-right-fill"></i><span class="content"
+                                        contenteditable="true">Enter your achievement here</span></span>
+                        </div><br>
+                    </div><br>
                             <button id="achieveaddon" type="button" class="btntrue" onclick="()"><i
                                     class="bi bi-plus-circle-fill"></i>ACHIEVEMENT</button>
                             <button id="achievedel" type="button" class="btnfalse" onclick="()"><i
                                     class="bi bi-dash-circle-fill"></i>ACHIEVEMENT</button>
-                            <div class="achievement"></div>
 
                             <br><br><span class="title">LANGUAGES</span><br><br>
-                            <div>
-                                <span id="lang"><input type="checkbox" class="input-checkbox" name="language" id="difflang"><i
-                                        class="bi bi-caret-right-fill"></i><span class="content"
-                                        contenteditable="true">Enter your languages here</span></span>
-                                <div></div><br>
+                            <div id="languages">
+                                <div class="langblock">
+                                    <span id="lang"><input type="checkbox" class="input-checkbox" name="language"
+                                            id="difflang"><i class="bi bi-caret-right-fill"></i><span class="content"
+                                            contenteditable="true">Enter your languages here</span></span>
+                                </div>
+                            </div><br>
                                 <button id="langaddon" type="button" class="btntrue" onclick="()"><i
                                         class="bi bi-plus-circle-fill"></i>LANGUAGES</button>
                                 <button id="langdel" type="button" class="btnfalse" onclick="()"><i
                                         class="bi bi-dash-circle-fill"></i>LANGUAGES</button>
-                                <div class="languages"></div>
 
                                 <br><br><span class="title">INTERESTS</span><br><br>
-                                <div>
-                                    <span id="int"><input type="checkbox" class="input-checkbox" name="interest" id="diffint"><i
-                                            class="bi bi-caret-right-fill"></i><span class="content"
-                                            contenteditable="true">Enter your interest here</span></span>
-                                    <div></div><br>
+                                <div id="interests">
+                                    <div class="intblock">
+                                        <span id="int"><input type="checkbox" class="input-checkbox" name="interest"
+                                                id="diffint"><i class="bi bi-caret-right-fill"></i><span class="content"
+                                                contenteditable="true">Enter your interest here</span></span>
+                                    </div>
+                                </div><br>
                                     <button id="intaddon" type="button" class="btntrue" onclick="()"><i
                                             class="bi bi-plus-circle-fill"></i>INTEREST</button>
                                     <button id="intdel" type="button" class="btnfalse" onclick="()"><i
                                             class="bi bi-dash-circle-fill"></i>INTEREST</button>
-                                    <div class="interests"></div><br><br>
-
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+                                    <br><br>
+                </div>
                 <div id="border"></div>
+
+
                 <div class="rightside">
                     <span class="title">PROFILE</span><br><br>
                     <div contenteditable="true">
@@ -112,36 +113,40 @@
 
                     <br><br><span class="title">EDUCATION</span><br><br>
                     <div id="education">
-                        <span id="edu"><input type="checkbox" class="input-checkbox" name="educat" id="diffedu"><i
-                                class="bi bi-caret-right-fill"></i><span contenteditable="true"><b>YOUR DEGREE</b></span><br><span class="content"
-                                contenteditable="true">Institute Name</span>-<span contenteditable="true">Passing Year</span></span>
-                        <div></div><br>
-                        <button id="eduaddon" type="button" class="btntrue" onclick= "addedu()"><i
-                                class="bi bi-plus-circle-fill"></i>EDUCATION</button>
-                        <button id="edudel" type="button" class="btnfalse" onclick="()"><i
+                        <div class="edublock">
+                            <span id="edu"><input type="checkbox" class="input-checkbox" name="educat" id="diffedu"><i
+                                    class="bi bi-caret-right-fill"></i><span contenteditable="true"><b>YOUR
+                                        DEGREE</b></span><br><span class="content" contenteditable="true">Institute
+                                    Name</span>-<span contenteditable="true">Passing Year</span></span>
+                        </div><br>
+                    </div>  
+                        <button id="eduaddon" type="button" class="btntrue" onclick="addedu()"><i
+                            class="bi bi-plus-circle-fill"></i>EDUCATION</button>
+                            <button id="edudel" type="button" class="btnfalse" onclick="remedu(event)"><i
                                 class="bi bi-dash-circle-fill"></i>EDUCATION</button>
-                        <div class="education"></div>
+                            <br><br>
 
-                        <br><br><span class="title" contenteditable="true">NEW SECTION</span><br><br>
-                        <div id="newsection">
-                              
+                    <div id="newsection">
+                        <div class="newsecblock">
+                                <span class="title" contenteditable="true">NEW SECTION</span><br><br>
                             <div id="newsectdes" contenteditable="true">
-                                This is the description of the new section of your resume.
-                                Stay in limit and write something that is under 400 words.
-                            </div><br>
-                            <button id="newaddon" type="button" class="btntrue" onclick="()"><i
-                                    class="bi bi-plus-circle-fill"></i>SECTION</button>
-                            <button id="newdel" type="button" class="btnfalse" onclick="()"><i
-                                    class="bi bi-dash-circle-fill"></i>SECTION</button>
-                            <div class="newsection"></div>
-
+                            This is the description of the new section of your resume.
+                            Stay in limit and write something that is under 400 words.
+                            </div>
                         </div>
                     </div>
-                </div>  
-            </section>
+                    <br>
+                        <button id="newaddon" type="button" class="btntrue" onclick="()"><i
+                                class="bi bi-plus-circle-fill"></i>SECTION</button>
+                        <button id="newdel" type="button" class="btnfalse" onclick="()"><i
+                                class="bi bi-dash-circle-fill"></i>SECTION</button>
+
+                </div>
+            </div>
+        </section>
     </div>
 
-    
+
 </body>
 <script src="script.js"></script>
 
